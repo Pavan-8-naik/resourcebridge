@@ -206,3 +206,99 @@ footer span { color: #858b99; font: 400 10px 'DM Sans', sans-serif; letter-spaci
   .booking-modal { padding: 23px; }
   .modal-detail { gap: 10px; }
 }
+
+/* Booking form */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.booking-form h3 {
+  margin: 0 0 8px;
+}
+
+.booking-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.booking-form input,
+.booking-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d9dfeb;
+  border-radius: 10px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  outline: 2px solid #647fe8;
+  outline-offset: 2px;
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+
+.modal-request-button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.modal-request-button:disabled,
+.admin-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.request-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.admin-actions .primary-button,
+.admin-actions .secondary-button {
+  cursor: pointer;
+}
+
+.request-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.request-row > div:first-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .request-row {
+    flex-direction: column;
+  }
+
+  .request-actions {
+    width: 100%;
+  }
+
+  .admin-actions {
+    width: 100%;
+  }
+}
+
